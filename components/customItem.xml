@@ -1,0 +1,42 @@
+<?xml version = "1.0" encoding = "utf-8" ?>
+
+<component name="customItem" extends = "Group">
+
+<interface>
+    <field id = "itemContent" type = "node" onChange = "showcontent" />
+    <field id = "focusPercent"  type = "float" onChange = "onItemHasFocus" />
+</interface>
+
+<script type="text/brightscript" uri="customItem.brs" >
+</script>
+
+<children>
+
+    <poster
+        id = "posterIcon"
+        translation = "[0,200]"
+        width = "40"
+        height = "32" />
+    
+    <label
+        id = "labelName"
+        translation = "[50,110]" />
+
+    <rectangle
+        id = "rectangleCursor"
+        translation = "[0,130]"
+        width = "600"
+        height = "5"
+        color = "0x3C3C3C" 
+        opacity = "1.0" />
+    
+    <poster
+        id = "posterImage"
+        translation = "[334,0]"
+        width = "250"
+        height = "200"
+        opacity = "1.0" />
+
+</children>
+
+</component>

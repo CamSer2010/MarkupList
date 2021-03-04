@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<component name="mainScreen" extends="Scene">
+
+    <script type="text/brightscript" uri="mainScreen.brs" />
+
+    <children>
+        
+        <poster
+            id = "font"
+            visible = "true"
+            width = "1280"
+            height = "720"
+            uri = "pkg:/images/white.png" />
+
+        <MarkupList
+            id="markupList"
+            translation = "[340,50]"
+            numRows = "5"
+            itemComponentName="customItem"
+            itemSize="[600,210]"
+            itemSpacing="[0,10]"
+            drawFocusFeedback="false"
+            vertFocusAnimationStyle="floatingFocus" />
+
+    </children>
+    
+</component>
