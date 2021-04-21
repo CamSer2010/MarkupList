@@ -1,25 +1,25 @@
 sub init()
-    m.icon = m.top.findNode("posterIcon")
-    m.name = m.top.findNode("labelName")
-    m.cursor = m.top.findNode("rectangleCursor")
-    m.image = m.top.findNode("posterImage")
+    m.posterIcon = m.top.findNode("posterIcon")
+    m.labelName = m.top.findNode("labelName")
+    m.rectangleCursor = m.top.findNode("rectangleCursor")
+    m.posterImage = m.top.findNode("posterImage")
 end sub
 
 sub showcontent()
-    m.itemcontent = m.top.itemContent
-    m.icon.uri = m.itemcontent.url
-    m.name.text = m.itemcontent.title
-    m.image.uri = m.itemcontent.HDPOSTERURL
-    ?"TITULO";m.top.itemcontent
-    ?"ICON",m.icon.uri
+    item = m.top.itemContent
+    m.posterIcon.uri = item.URL
+    m.labelName.text = item.TITLE
+    m.posterImage.uri = item.HDPOSTERURL
+    item.description = "down"
+    '?"TITULO";m.labelName.text
 end sub
 
-sub onItemHasFocus()
+sub showfocus()
     if m.top.focusPercent > 0.5 then
-        m.cursor.opacity = "1"
-        m.image.opacity = "1"
+        m.rectangleCursor.opacity = "1"
+        m.posterImage.opacity = "1"
     else
-        m.cursor.opacity = "0.4"
-        m.image.opacity = "0.4"
+        m.rectangleCursor.opacity = "0.0"
+        m.posterImage.opacity = "0.0"
     end if
 end sub

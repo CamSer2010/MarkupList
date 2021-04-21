@@ -15,10 +15,10 @@
 
         <MarkupList
             id="markupList"
-            translation = "[340,50]"
-            numRows = "5"
+            translation = "[340,20]"
+            numRows="4"
             itemComponentName="customItem"
-            itemSize="[600,210]"
+            itemSize="[600,160]"
             itemSpacing="[0,10]"
             drawFocusFeedback="false"
             vertFocusAnimationStyle="floatingFocus" />

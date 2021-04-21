@@ -4,7 +4,7 @@
 
 <interface>
     <field id = "itemContent" type = "node" onChange = "showcontent" />
-    <field id = "focusPercent"  type = "float" onChange = "onItemHasFocus" />
+    <field id = "focusPercent" type = "float" onChange = "showfocus" />
 </interface>
 
 <script type="text/brightscript" uri="customItem.brs" >
@@ -14,28 +14,29 @@
 
     <poster
         id = "posterIcon"
-        translation = "[0,200]"
+        translation = "[0,115]"
         width = "40"
         height = "32" />
     
     <label
         id = "labelName"
-        translation = "[50,110]" />
+        color = "0x3C3C3C"
+        translation = "[50,120]" />
 
     <rectangle
         id = "rectangleCursor"
-        translation = "[0,130]"
+        translation = "[0,155]"
         width = "600"
         height = "5"
         color = "0x3C3C3C" 
-        opacity = "1.0" />
+        opacity = "0.0" />
     
     <poster
         id = "posterImage"
-        translation = "[334,0]"
-        width = "250"
-        height = "200"
-        opacity = "1.0" />
+        translation = "[400,0]"
+        width = "200"
+        height = "150"
+        opacity = "0.0" />
 
 </children>
 
